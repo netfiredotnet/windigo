@@ -447,10 +447,11 @@ func (hWnd HWND) GetWindowRect() RECT {
 }
 
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/dwmapi/nf-dwmapi-dwmgetwindowattribute
-func (hWnd HWND) DwmGetWindowAttribute() RECT {
+// Gets RECT of window not including drop shadow
+func (hWnd HWND) GetWindowRectEx() RECT {
 	var rc RECT
-	ret, _, err := syscall.Syscall(proc.DwmGetWindowAttribute.Addr(), 3,
-		uintptr(hWnd), uintptr(co.DWMWA_EXTENDED_FRAME_BOUNDS), uintptr(unsafe.Pointer(&rc)))
+	ret, _, err := syscall.Syscall6(proc.DwmGetWindowAttribute.Addr(), 4,
+		uintptr(hWnd), uintptr(co.DWMWA_EXTENDED_FRAME_BOUNDS), uintptr(unsafe.Pointer(&rc)), 16, 0, 0)
 	if ret == 0 {
 		panic(errco.ERROR(err))
 	}
