@@ -450,10 +450,10 @@ func (hWnd HWND) GetWindowRect() RECT {
 // Gets RECT of window not including drop shadow
 func (hWnd HWND) GetWindowRectEx() RECT {
 	var rc RECT
-	ret, _, err := syscall.Syscall6(proc.DwmGetWindowAttribute.Addr(), 4,
+	ret, _, _ := syscall.Syscall6(proc.DwmGetWindowAttribute.Addr(), 4,
 		uintptr(hWnd), uintptr(co.DWMWA_EXTENDED_FRAME_BOUNDS), uintptr(unsafe.Pointer(&rc)), 16, 0, 0)
-	if ret == 0 {
-		panic(errco.ERROR(err))
+	if hr := errco.ERROR(ret); hr != errco.S_OK {
+		panic(hr)
 	}
 	return rc
 }
