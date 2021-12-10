@@ -100,6 +100,7 @@ var (
 	GetWindowDC                   = user32.NewProc("GetWindowDC")
 	GetWindowLongPtr              = user32.NewProc("GetWindowLongPtrW")
 	GetWindowRect                 = user32.NewProc("GetWindowRect")
+	DwmGetWindowAttribute         = user32.NewProc("DwmGetWindowAttribute")
 	GetWindowText                 = user32.NewProc("GetWindowTextW")
 	GetWindowTextLength           = user32.NewProc("GetWindowTextLengthW")
 	GetWindowThreadProcessId      = user32.NewProc("GetWindowThreadProcessId")

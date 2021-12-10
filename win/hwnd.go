@@ -446,6 +446,17 @@ func (hWnd HWND) GetWindowRect() RECT {
 	return rc
 }
 
+// 📑 https://docs.microsoft.com/en-us/windows/win32/api/dwmapi/nf-dwmapi-dwmgetwindowattribute
+func (hWnd HWND) DwmGetWindowAttribute() RECT {
+	var rc RECT
+	ret, _, err := syscall.Syscall(proc.DwmGetWindowAttribute.Addr(), 3,
+		uintptr(hWnd), uintptr(co.DWMWA_EXTENDED_FRAME_BOUNDS), uintptr(unsafe.Pointer(&rc)))
+	if ret == 0 {
+		panic(errco.ERROR(err))
+	}
+	return rc
+}
+
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getwindowtextw
 func (hWnd HWND) GetWindowText() string {
 	len := hWnd.GetWindowTextLength() + 1

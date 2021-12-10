@@ -1,0 +1,33 @@
+package co
+
+// DwmGetWindowAttribute() dwAttribute
+//
+// 📑 https://docs.microsoft.com/en-us/windows/win32/api/dwmapi/ne-dwmapi-dwmwindowattribute
+type DWMWA uint32
+
+const (
+	DWMWA_NCRENDERING_ENABLED         DWMWA = 1
+	DWMWA_NCRENDERING_POLICY          DWMWA = 2
+	DWMWA_TRANSITIONS_FORCEDISABLED   DWMWA = 3
+	DWMWA_ALLOW_NCPAINT               DWMWA = 4
+	DWMWA_CAPTION_BUTTON_BOUNDS       DWMWA = 5
+	DWMWA_NONCLIENT_RTL_LAYOUT        DWMWA = 6
+	DWMWA_FORCE_ICONIC_REPRESENTATION DWMWA = 7
+	DWMWA_FLIP3D_POLICY               DWMWA = 8
+	DWMWA_EXTENDED_FRAME_BOUNDS       DWMWA = 9
+	DWMWA_HAS_ICONIC_BITMAP           DWMWA = 10
+	DWMWA_DISALLOW_PEEK               DWMWA = 11
+	DWMWA_EXCLUDED_FROM_PEEK          DWMWA = 12
+	DWMWA_CLOAK                       DWMWA = 13
+	DWMWA_CLOAKED                     DWMWA = 14
+	DWMWA_FREEZE_REPRESENTATION       DWMWA = 25
+	DWMWA_LAST                        DWMWA = 16
+	// DWMWA_PASSIVE_UPDATE_MODE            DWMWA = 0
+	// DWMWA_USE_HOSTBACKDROPBRUSH          DWMWA = 0
+	// DWMWA_USE_IMMERSIVE_DARK_MODE        DWMWA = 0
+	// DWMWA_WINDOW_CORNER_PREFERENCE       DWMWA = 0
+	// DWMWA_BORDER_COLOR                   DWMWA = 0
+	// DWMWA_CAPTION_COLOR                  DWMWA = 0
+	// DWMWA_TEXT_COLOR                     DWMWA = 0
+	// DWMWA_VISIBLE_FRAME_BORDER_THICKNESS DWMWA = 0
+)
