@@ -1,3 +1,3 @@
-module github.com/rodrigocfd/windigo
+module github.com/netfiredotnet/windigo
 
 go 1.17
