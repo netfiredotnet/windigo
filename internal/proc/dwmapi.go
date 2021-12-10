@@ -12,4 +12,5 @@ var (
 	DwmIsCompositionEnabled       = dwmapi.NewProc("DwmIsCompositionEnabled")
 	DwmSetIconicLivePreviewBitmap = dwmapi.NewProc("DwmSetIconicLivePreviewBitmap")
 	DwmSetIconicThumbnail         = dwmapi.NewProc("DwmSetIconicThumbnail")
+	DwmGetWindowAttribute         = dwmapi.NewProc("DwmGetWindowAttribute")
 )
