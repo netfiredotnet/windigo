@@ -3,7 +3,7 @@ package win
 import (
 	"syscall"
 
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 // An atom.

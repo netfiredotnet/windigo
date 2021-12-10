@@ -5,8 +5,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/internal/util"
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/internal/util"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-accel

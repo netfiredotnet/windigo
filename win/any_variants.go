@@ -3,7 +3,7 @@ package win
 import (
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 type (

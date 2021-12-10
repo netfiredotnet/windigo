@@ -1,6 +1,6 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/rodrigocfd/windigo.svg)](https://pkg.go.dev/github.com/rodrigocfd/windigo)
-[![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/rodrigocfd/windigo.svg)](https://github.com/rodrigocfd/windigo)
-[![Lines of code](https://tokei.rs/b1/github/rodrigocfd/windigo)](https://github.com/rodrigocfd/windigo)
+[![Go Reference](https://pkg.go.dev/badge/github.com/netfiredotnet/windigo.svg)](https://pkg.go.dev/github.com/netfiredotnet/windigo)
+[![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/rodrigocfd/windigo.svg)](https://github.com/netfiredotnet/windigo)
+[![Lines of code](https://tokei.rs/b1/github/rodrigocfd/windigo)](https://github.com/netfiredotnet/windigo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Windigo
@@ -71,9 +71,9 @@ import (
     "fmt"
     "runtime"
 
-    "github.com/rodrigocfd/windigo/ui"
-    "github.com/rodrigocfd/windigo/win"
-    "github.com/rodrigocfd/windigo/win/co"
+    "github.com/netfiredotnet/windigo/ui"
+    "github.com/netfiredotnet/windigo/win"
+    "github.com/netfiredotnet/windigo/win/co"
 )
 
 func main() {

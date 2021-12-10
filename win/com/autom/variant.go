@@ -7,10 +7,10 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/internal/proc"
-	"github.com/rodrigocfd/windigo/internal/util"
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/com/autom/automco"
+	"github.com/netfiredotnet/windigo/internal/proc"
+	"github.com/netfiredotnet/windigo/internal/util"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/com/autom/automco"
 )
 
 // OLE Automation VARIANT type.

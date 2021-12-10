@@ -3,7 +3,7 @@ package win
 import (
 	"strings"
 
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 // High-level abstraction to a .ini file.

@@ -4,10 +4,10 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/com/dshow/dshowco"
-	"github.com/rodrigocfd/windigo/win/com/dshow/dshowvt"
-	"github.com/rodrigocfd/windigo/win/errco"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/com/dshow/dshowco"
+	"github.com/netfiredotnet/windigo/win/com/dshow/dshowvt"
+	"github.com/netfiredotnet/windigo/win/errco"
 )
 
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/evr/nn-evr-imfvideodisplaycontrol

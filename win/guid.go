@@ -7,10 +7,10 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/internal/proc"
-	"github.com/rodrigocfd/windigo/internal/util"
-	"github.com/rodrigocfd/windigo/win/co"
-	"github.com/rodrigocfd/windigo/win/errco"
+	"github.com/netfiredotnet/windigo/internal/proc"
+	"github.com/netfiredotnet/windigo/internal/util"
+	"github.com/netfiredotnet/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/errco"
 )
 
 // Can be created with NewGuidFromClsid() or NewGuidFromIid().

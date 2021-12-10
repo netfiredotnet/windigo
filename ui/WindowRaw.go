@@ -5,9 +5,9 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/co"
-	"github.com/rodrigocfd/windigo/win/errco"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/errco"
 )
 
 // Base to all windows created by specifying all options, which will be passed

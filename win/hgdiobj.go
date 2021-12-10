@@ -4,9 +4,9 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/internal/proc"
-	"github.com/rodrigocfd/windigo/win/co"
-	"github.com/rodrigocfd/windigo/win/errco"
+	"github.com/netfiredotnet/windigo/internal/proc"
+	"github.com/netfiredotnet/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/errco"
 )
 
 // A handle to a GDI object.

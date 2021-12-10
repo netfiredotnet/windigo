@@ -4,11 +4,11 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/co"
-	"github.com/rodrigocfd/windigo/win/com/autom/automco"
-	"github.com/rodrigocfd/windigo/win/com/autom/automvt"
-	"github.com/rodrigocfd/windigo/win/errco"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/com/autom/automco"
+	"github.com/netfiredotnet/windigo/win/com/autom/automvt"
+	"github.com/netfiredotnet/windigo/win/errco"
 )
 
 // IDispatch COM interface.

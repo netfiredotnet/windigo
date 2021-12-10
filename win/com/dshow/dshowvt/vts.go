@@ -1,9 +1,9 @@
 package dshowvt
 
 import (
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/com/autom/automvt"
-	"github.com/rodrigocfd/windigo/win/com/idl/idlvt"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/com/autom/automvt"
+	"github.com/netfiredotnet/windigo/win/com/idl/idlvt"
 )
 
 // IBaseFilter virtual table.

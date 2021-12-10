@@ -1,7 +1,7 @@
 package ui
 
 import (
-	"github.com/rodrigocfd/windigo/win"
+	"github.com/netfiredotnet/windigo/win"
 )
 
 // Any window.

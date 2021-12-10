@@ -3,8 +3,8 @@ package ui
 import (
 	"unicode"
 
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 // Native accelerator table resource.

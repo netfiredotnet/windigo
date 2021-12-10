@@ -4,8 +4,8 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/internal/proc"
-	"github.com/rodrigocfd/windigo/win"
+	"github.com/netfiredotnet/windigo/internal/proc"
+	"github.com/netfiredotnet/windigo/win"
 )
 
 // String type used in COM Automation.

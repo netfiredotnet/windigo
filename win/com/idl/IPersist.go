@@ -4,9 +4,9 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/com/idl/idlvt"
-	"github.com/rodrigocfd/windigo/win/errco"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/com/idl/idlvt"
+	"github.com/netfiredotnet/windigo/win/errco"
 )
 
 // IPersist COM interface.

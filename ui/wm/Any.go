@@ -1,7 +1,7 @@
 package wm
 
 import (
-	"github.com/rodrigocfd/windigo/win"
+	"github.com/netfiredotnet/windigo/win"
 )
 
 // Raw message parameters to any message: WPARAM and LPARAM.

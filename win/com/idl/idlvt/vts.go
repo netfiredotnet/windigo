@@ -1,7 +1,7 @@
 package idlvt
 
 import (
-	"github.com/rodrigocfd/windigo/win"
+	"github.com/netfiredotnet/windigo/win"
 )
 
 // IPersist virtual table.

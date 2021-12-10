@@ -1,7 +1,7 @@
 package automvt
 
 import (
-	"github.com/rodrigocfd/windigo/win"
+	"github.com/netfiredotnet/windigo/win"
 )
 
 // IDispatch virtual table.

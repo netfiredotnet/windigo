@@ -4,8 +4,8 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/rodrigocfd/windigo/internal/proc"
-	"github.com/rodrigocfd/windigo/win/errco"
+	"github.com/netfiredotnet/windigo/internal/proc"
+	"github.com/netfiredotnet/windigo/win/errco"
 )
 
 // A handle returned by FindFirstFile() function.

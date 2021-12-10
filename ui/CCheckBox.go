@@ -1,9 +1,9 @@
 package ui
 
 import (
-	"github.com/rodrigocfd/windigo/ui/wm"
-	"github.com/rodrigocfd/windigo/win"
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/ui/wm"
+	"github.com/netfiredotnet/windigo/win"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 // Native check box control.

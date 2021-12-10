@@ -1,7 +1,7 @@
 package dshowco
 
 import (
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 // DirectShow COM CLSIDs.

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 type _PathT struct{}

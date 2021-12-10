@@ -1,7 +1,7 @@
 package automco
 
 import (
-	"github.com/rodrigocfd/windigo/win/co"
+	"github.com/netfiredotnet/windigo/win/co"
 )
 
 // Automation COM IIDs.

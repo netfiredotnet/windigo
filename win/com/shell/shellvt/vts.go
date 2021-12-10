@@ -1,7 +1,7 @@
 package shellvt
 
 import (
-	"github.com/rodrigocfd/windigo/win"
+	"github.com/netfiredotnet/windigo/win"
 )
 
 // IFileDialog virtual table.
