@@ -467,7 +467,7 @@ func (hWnd HWND) GetMenuBarInfo() MENUBARINFO {
 	ret, _, err := syscall.Syscall6(proc.GetMenuBarInfo.Addr(), 4,
 		uintptr(hWnd), 0xFFFFFFFD, 0, uintptr(unsafe.Pointer(&mbi)), 0, 0)
 
-	if ret == 0 {
+	if ret != 0 {
 		panic(errco.ERROR(err))
 	}
 	return mbi
