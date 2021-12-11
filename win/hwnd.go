@@ -450,12 +450,27 @@ func (hWnd HWND) GetWindowRect() RECT {
 // Gets RECT of window not including drop shadow
 func (hWnd HWND) GetWindowRectEx() RECT {
 	var rc RECT
+	// NOTE: call requires size of RECT; this is currently hardcoded at 16 bytes. Should a "SetCbSize()" func be established for RECT?
 	ret, _, _ := syscall.Syscall6(proc.DwmGetWindowAttribute.Addr(), 4,
 		uintptr(hWnd), uintptr(co.DWMWA_EXTENDED_FRAME_BOUNDS), uintptr(unsafe.Pointer(&rc)), 16, 0, 0)
 	if hr := errco.ERROR(ret); hr != errco.S_OK {
 		panic(hr)
 	}
 	return rc
+}
+
+// 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getmenubarinfo
+func (hWnd HWND) GetMenuBarInfo() MENUBARINFO {
+	var mbi MENUBARINFO
+	mbi.SetCbSize()
+
+	ret, _, err := syscall.Syscall6(proc.GetMenuBarInfo.Addr(), 4,
+		uintptr(hWnd), 0xFFFFFFFD, 0, uintptr(unsafe.Pointer(&mbi)), 0, 0)
+
+	if ret == 0 {
+		panic(errco.ERROR(err))
+	}
+	return mbi
 }
 
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getwindowtextw

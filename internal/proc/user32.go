@@ -75,6 +75,7 @@ var (
 	GetInputState                 = user32.NewProc("GetInputState")
 	GetLastActivePopup            = user32.NewProc("GetLastActivePopup")
 	GetMenu                       = user32.NewProc("GetMenu")
+	GetMenuBarInfo                = user32.NewProc("GetMenuBarInfo")
 	GetMenuDefaultItem            = user32.NewProc("GetMenuDefaultItem")
 	GetMenuItemCount              = user32.NewProc("GetMenuItemCount")
 	GetMenuItemID                 = user32.NewProc("GetMenuItemID")

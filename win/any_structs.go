@@ -336,6 +336,21 @@ type MENUGETOBJECTINFO struct {
 
 // ⚠️ You must call SetCbSize().
 //
+// 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-menubarinfo
+type MENUBARINFO struct {
+	cbSize      uint32
+	rcBar       RECT
+	hMenu       HMENU
+	hwndMenu    HWND
+	fBarFocused bool
+	fFocused    bool
+	fUnused     bool
+}
+
+func (mbi *MENUBARINFO) SetCbSize() { mbi.cbSize = uint32(unsafe.Sizeof(*mbi)) }
+
+// ⚠️ You must call SetCbSize().
+//
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-menuinfo
 type MENUINFO struct {
 	cbSize          uint32
