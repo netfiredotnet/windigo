@@ -339,11 +339,11 @@ type MENUGETOBJECTINFO struct {
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-menubarinfo
 type MENUBARINFO struct {
 	cbSize      uint32
-	rcBar       RECT
-	hMenu       HMENU
-	hwndMenu    HWND
-	fBarFocused bool
-	fFocused    bool
+	RcBar       RECT
+	HMenu       HMENU
+	HwndMenu    HWND
+	FBarFocused bool
+	FFocused    bool
 	fUnused     bool
 }
 
